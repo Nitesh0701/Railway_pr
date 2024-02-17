@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+     <style>
+body {
+   background-image:url("{% static 'images/pnr.jpeg' %}");
+    background-repeat: no-repeat;
+    background-size: 1400px 720px;
+}
+</style>
+</head>
+<body>
+ <center>   <h1> PNR Status</h1></center>
+<div class="navbar">
+<form>
+    <center><label>PNR number</label>
+        <input type="text" name="enter" placeholder="enter no" required></center>
+    <br>
+    <center><button href="#" style="color:white; background-color:grey" class="btn">search</button></center>
+
+  </form>
+
+</div>
+
+
+</body>
+</html>

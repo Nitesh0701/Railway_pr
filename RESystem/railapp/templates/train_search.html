@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Train Information</title>
+</head>
+<body>
+<h1>Train Information</h1>
+<table border="1">
+  <thead>
+  <tr>
+    <th>Train Number</th>
+    <th>Train Name</th>
+    <th>Run Days</th>
+    <th>Source</th>
+    <th>Destination</th>
+    <th>Departure Time</th>
+    <th>Arrival Time</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for train in extracted_data %}
+  <tr>
+     <td>{{ train.train_number }}</td>
+                    <td>{{ train.train_name }}</td>
+                    <td>{{ train.run_days }}</td>
+                    <td>{{ train.train_src }}</td>
+                    <td>{{ train.train_dstn }}</td>
+                    <td>{{ train.from_std }}</td>
+                    <td>{{ train.to_std }}</td>
+  </tr>
+  {% endfor %}
+
+  </tbody>
+
+</table>
+</body>
+</html>

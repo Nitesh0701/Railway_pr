@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+   background-image:url("{% static 'images/rimage.jpeg' %}");
+        background-repeat: no-repeat;
+        background-size: 1400px 720px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 20px 30px 20px;
+  width : 30%;
+  margin-top : 30px;
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+h1
+{
+color : white;
+font-size : 50px;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #a18d8c;
+  border-radius: 0px 0px 4px 4px;
+  width : 30%;
+}
+
+</style>
+</head>
+<body>
+<center>
+
+<h1>Railway Enquiry System</h1>
+<div class="container">
+<form>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <a href="welcome/" style="color:white; background-color:blue" class="btn">Login</a>
+  </form>
+</div>
+
+<div class="bottom-container">
+      <a href="#" style="color:white" class="btn">Sign up</a>
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+  </div>
+</div>
+</center>
+</body>
+</html>

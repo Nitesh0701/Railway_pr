@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <style>
+body {
+   background-image:url("{% static 'images/search1.jpeg' %}");
+    background-repeat: no-repeat;
+    background-size: 1400px 720px;
+}
+</style>
+
+</head>
+<body>
+<center><h1> Search Trains</h1></center>
+<div method="post" class="navbar">
+<form>
+    <center><label>From</label>
+
+        <input type="text" name="Source" placeholder="Source" required>
+
+
+
+    <label>To</label>
+        <input type="text" name="Destination" placeholder="Destination" required></center>
+     <br>
+
+        <center><button href="#" style="color:white; background-color:grey" class="btn">search</button>
+            <br>
+
+            <input type="text" name="Date" placeholder="Date" required>
+
+
+
+
+    </center>
+  </form>
+
+</div>
+
+
+</div>
+</body>
+</html>
